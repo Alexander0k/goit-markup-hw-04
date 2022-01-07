@@ -106,10 +106,6 @@ img {
   color: #2196f3;
 }
 
-.conteiner-contact {
-  margin-left: auto;
-}
-
 .header-mail {
   font-weight: 500;
   font-size: 14px;
@@ -148,19 +144,15 @@ img {
 }
 
 .header-social-mail {
-  margin-right: 10px;
   width: 16px;
   height: 12px;
-  /* display: flex;
-  align-items: center; */
+  margin-left: 10px;
 }
 
 .header-social-tel {
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-  /* display: flex;
-  align-items: center; */
+  width: 16px;
+  height: 10px;
+  margin-left: 10px;
 }
 
 /*--------------------- HERO -----------------------*/
@@ -380,7 +372,7 @@ img {
 }
 
 .team-social-icon {
-  fill: #afb1b8;
+  color: #afb1b8;
   width: 20px;
   height: 20px;
 }
@@ -456,6 +448,13 @@ img {
 } */
 
 /*--------------------- FOOTER -----------------------*/
+.footer-wrap {
+  flex-wrap: wrap;
+  display: flex;
+  justify-self: flex-start;
+  align-items: center;
+}
+
 .conteiner-footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -536,4 +535,64 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-icon-list {
+  display: flex;
+  justify-content: flex-start;
+  width: 231px;
+  height: 81px;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+.foter-icon-titel {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer-social-item + .footer-social-item {
+  margin-left: 10px;
+}
+
+.footer-social-link {
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.footer-social-icon {
+  fill: #ffffff;
+  width: 20px;
+  height: 20px;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: #2196f3;
+}
+
+.footer-social-link:hover .footer-social-icon,
+.footer-social-link:focus .footer-social-icon {
+  fill: #ffffff;
+}
+
+.footer-social {
+  margin-left: 70px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
 }
