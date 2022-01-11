@@ -43,7 +43,6 @@ img {
   padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
 }
-
 .header-conteiner {
   display: flex;
   align-items: center;
@@ -109,6 +108,10 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  text-align: center;
 }
 
 .header-mail:focus,
@@ -141,15 +144,14 @@ img {
 }
 
 .header-social-mail {
-  width: 16px;
-  height: 12px;
-  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .header-social-tel {
-  width: 16px;
-  height: 10px;
-  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-self: center;
 }
 
 /*--------------------- BUTTON -----------------------*/

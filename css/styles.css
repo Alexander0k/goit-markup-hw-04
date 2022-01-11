@@ -112,6 +112,10 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  text-align: center;
 }
 
 .header-mail:focus,
@@ -144,15 +148,14 @@ img {
 }
 
 .header-social-mail {
-  width: 16px;
-  height: 12px;
-  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .header-social-tel {
-  width: 16px;
-  height: 10px;
-  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-self: center;
 }
 
 /*--------------------- HERO -----------------------*/
@@ -217,11 +220,9 @@ img {
   height: 120px;
   background-color: #f5f4fa;
   margin-bottom: 30px;
-}
-
-.info-icon-list {
-  margin-left: 100px;
-  margin-top: 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .info {
@@ -427,11 +428,6 @@ img {
   fill: #2196f3;
 }
 
-/* .customer-link:hover .team-social-icon,
-.customer-link:focus .team-social-icon {
-  border: 1px solid #2196f3;
-} */
-
 .customer-titel {
   display: block;
   margin-bottom: 50px;
@@ -442,10 +438,16 @@ img {
   letter-spacing: 0.03em;
 }
 
-/* .customer-link:hover .team-social-link,
-.customer-link:focus .team-social-link {
-  color: #2196f3;
-} */
+.customer-link-icon {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+}
+
+.customer-icon {
+  width: 106px;
+  height: 60px;
+}
 
 /*--------------------- FOOTER -----------------------*/
 .footer-wrap {
